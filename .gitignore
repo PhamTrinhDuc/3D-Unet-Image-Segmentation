@@ -27,6 +27,7 @@ data_text
 vector_db
 data_detail_superapp
 
+*.tar
 
 # Distribution / packaging
 .Python
