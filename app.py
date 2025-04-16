@@ -3,13 +3,11 @@ import torch
 import numpy as np
 import matplotlib.pyplot as plt
 from torchvision import transforms
-from model import UNETR
+from model import UNETR, get_default_device
+
+
 
 MODEL_PATH = "./3D_U-Net_BraTS_ckpt.tar"
-
-def get_default_device():
-   gpu_available = torch.cuda.is_available()
-   return torch.device('cuda' if gpu_available else 'cpu'), gpu_available
 
 def safe_load_numpy_image(uploaded_file):
     transformer = transforms.Normalize(mean=[0.5], std=[0.5])
