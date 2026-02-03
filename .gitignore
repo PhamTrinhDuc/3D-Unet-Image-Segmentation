@@ -26,6 +26,7 @@ data
 data_text
 vector_db
 data_detail_superapp
+tmp 
 
 *.tar
 
